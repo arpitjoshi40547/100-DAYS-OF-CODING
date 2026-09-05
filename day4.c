@@ -9,5 +9,6 @@ int main()
     perimeter=2*radius*3.14159265;
     printf("The area of the circle =%f\n",area);
     printf("The perimeter of the circle =%f\n",perimeter);
+    return 0;
 }
 
