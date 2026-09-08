@@ -20,4 +20,5 @@ int main()
     }
     else 
     printf("The character entered is not an alphabet");
+    return 0;
 }
