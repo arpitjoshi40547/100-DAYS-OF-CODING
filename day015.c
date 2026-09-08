@@ -5,7 +5,7 @@ int main()
     char word;
     printf("Enter a character \n ");
     scanf("%c",&word);
-    if(word>=64&&word<=96 )
+    if(word>=65&&word<=96 )
     {
         printf("The character is upper case");
     }
