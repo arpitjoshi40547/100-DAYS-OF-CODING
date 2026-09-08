@@ -3,11 +3,11 @@
 int main()
 {
     int number;
-    printf(" Enter a number ");
+    printf(" Enter a number \n");
     scanf("%d",&number);
     if(number%2==0)
     {
-        printf("The mumber is even");
+        printf("The number is even");
     }
     else if(number%2==1)
     {
