@@ -5,7 +5,7 @@ int main()
     int number,product=1;
     printf("Enter the number where products need to be calculated\n");
     scanf("%d",&number);
-    for(int i =1 ;i<=number;i++)
+    for(int i =2 ;i<=number;i=i+2)
     {
         product=product*i;
     }
