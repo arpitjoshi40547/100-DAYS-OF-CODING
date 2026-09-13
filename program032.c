@@ -1,3 +1,6 @@
+//Program to check for palindrome
+
+
 #include <stdio.h>
 
 int main()

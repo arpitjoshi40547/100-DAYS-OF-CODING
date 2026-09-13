@@ -1,3 +1,5 @@
+//program to check for uppercase or lower case or special character or number
+
 #include <stdio.h>
 
 int main()

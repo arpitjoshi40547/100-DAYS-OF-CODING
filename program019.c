@@ -1,3 +1,5 @@
+//Program to check wheather the triangle is equilateral scalene or isoscles
+
 #include <stdio.h>
 
 int main()

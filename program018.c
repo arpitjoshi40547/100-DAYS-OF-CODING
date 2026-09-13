@@ -1,3 +1,6 @@
+//Program  give grades according to marks
+
+
 #include <stdio.h>
 
 int main()
