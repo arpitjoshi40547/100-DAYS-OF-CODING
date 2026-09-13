@@ -9,4 +9,5 @@ int main()
     scanf("%d %d",&a,&b);
     sum=a+b;
     printf("The sum of two number is %d\n",sum);
+    return 0;
 }
