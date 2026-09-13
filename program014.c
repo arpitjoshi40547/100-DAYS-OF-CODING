@@ -1,3 +1,5 @@
+// program to check for vowels
+
 #include <stdio.h>
 #include <ctype.h>
 

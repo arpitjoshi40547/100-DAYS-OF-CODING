@@ -1,3 +1,6 @@
+//Program to convert decimla into binary
+
+
 #include <stdio.h>
 
 int main()
