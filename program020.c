@@ -1,3 +1,5 @@
+//Program to print days of the weak according to number
+
 #include <stdio.h>
 
 int main()

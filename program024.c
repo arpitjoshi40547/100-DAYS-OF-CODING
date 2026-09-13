@@ -1,3 +1,5 @@
+//Program to print electricity bill
+
 #include <stdio.h>
 
 int main()

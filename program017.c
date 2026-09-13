@@ -1,3 +1,6 @@
+//Program to calculate roots of quafratic equation
+
+
 #include <stdio.h>
 #include <math.h>
 

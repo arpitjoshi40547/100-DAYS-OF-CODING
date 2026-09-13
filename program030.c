@@ -1,3 +1,6 @@
+//Program to calculate reverse of a number'
+
+
 #include <stdio.h>
 
 int main()

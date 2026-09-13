@@ -1,3 +1,5 @@
+//Program to sum all numbers till n
+
 #include <stdio.h>
 
 int main()
