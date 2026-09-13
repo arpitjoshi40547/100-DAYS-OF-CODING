@@ -1,3 +1,5 @@
+//Program to sum to numbers
+
 #include <stdio.h>
 
 int main()
