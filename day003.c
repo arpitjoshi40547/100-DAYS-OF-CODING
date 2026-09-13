@@ -1,3 +1,5 @@
+//Program to calculate area perimeter of a rectangle
+
 #include <stdio.h>
 
 int main()
