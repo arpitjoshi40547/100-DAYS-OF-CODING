@@ -1,3 +1,5 @@
+//Progam to convert time(seconds) into hours minutes and seconds
+
 #include <stdio.h>
 
 int main()
