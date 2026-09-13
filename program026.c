@@ -1,3 +1,7 @@
+//program to print number till n
+
+
+
 #include <stdio.h>
 
 

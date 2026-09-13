@@ -1,3 +1,5 @@
+//Progarm to find out profit and loss_perecntage
+
 #include <stdio.h>
 
 int main()

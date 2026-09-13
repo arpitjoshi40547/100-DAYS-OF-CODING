@@ -1,3 +1,5 @@
+//Program to find out factorial of number
+
 #include <stdio.h>
 
 

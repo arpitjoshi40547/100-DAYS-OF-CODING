@@ -1,3 +1,5 @@
+//Program to print product of even numbers till 8
+
 #include <stdio.h>
 
 int main()
