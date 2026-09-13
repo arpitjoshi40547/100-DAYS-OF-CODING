@@ -1,3 +1,5 @@
+//Program to check wheater the numer is even or odd
+
 #include <stdio.h>
 
 int main()

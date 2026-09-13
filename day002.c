@@ -1,3 +1,5 @@
+//Program to calculate sum prodct and difference of 2 nunbers
+
 #include <stdio.h>
 
 int main()
