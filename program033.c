@@ -28,4 +28,5 @@ int main()
     printf("The number %d amstrong",number);
     else
     printf("The number %d is not amstrong",number);
+    return 0;
 }
