@@ -15,14 +15,14 @@ int main()
     printf("The input is invalid");
     return 0;
     }
-    for(int i=1,k=1;i<=a,k<=b;i++,k++)
-    {
-        if(a%i==0&&b%k==0)
+    for(int i=1; ; i++)
         {
-            lcm=i*k;
+            if(i%a==0 && i%b==0)
+            {
+                lcm=i;
+                break;
+            }
         }
-        
-    }
     printf("The lcm of %d and %d is:%d",num1,num2,lcm);
     return 0;
 }
