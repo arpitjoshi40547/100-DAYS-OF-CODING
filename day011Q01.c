@@ -1,4 +1,4 @@
-// Program to enet
+// Program to enter month number to get month name and no of days 
 
 #include <stdio.h>
 
