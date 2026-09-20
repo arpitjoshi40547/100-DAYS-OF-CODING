@@ -1,20 +1,19 @@
-//Find the sum of array elements.
+// Find the sum of array elements.
 
 #include <stdio.h>
 int main()
 {
     int arr[10];
-    int sum=0;
+    int sum = 0;
     printf("Enter 10 number for the array\n");
-    for(int i=1;i<=11;i++)
+    for (int i = 0; i < 10; i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d", &arr[i]);
     }
-    for(int j=1;j<=11;j++)
+    for (int j = 0; j < 10; j++)
     {
-        sum=sum+arr[j];
+        sum = sum + arr[j];
     }
-    printf("The sum of all the elements of the array:%d",sum);
+    printf("The sum of all the elements of the array:%d", sum);
     return 0;
-
 }
