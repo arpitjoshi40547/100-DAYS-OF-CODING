@@ -8,13 +8,13 @@ int main()
     printf("How many elements u want in ur array\n");
     scanf("%d", &n);
     printf("Enter all the numbers of ur array\n");
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
     }
     int arrmax = arr[0];
     int arrmin = arr[0];
-    for (int j = 0; j <= n; j++)
+    for (int j = 0; j < n; j++)
     {
         if (arrmax < arr[j])
             arrmax = arr[j];
