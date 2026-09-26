@@ -23,21 +23,23 @@ int main()
         }
         arr[j + 1] = key;
     }
-    //Inserting a number
+    // Inserting a number
     int num;
     printf("Enter the number that need to be inserted\n");
-    scanf("%d",&num);
-    int i = n - 1;
-    while (i >= 0 && arr[i] > num)
+    scanf("%d", &num);
+    for (int i = 0; i < n + 1; i++)
     {
-        arr[i + 1] = arr[i];
-        i--;
+        if (num < arr[i] || i == n)
+        {
+            int temp = arr[i];
+            arr[i] = num;
+            num = temp;
+        }
     }
-    arr[i + 1] = num;
-    printf("The new array is:\n");
-    for(int i=0;i<n+1;i++)
+    printf(" The new array is:\n");
+    for (int i = 0; i < n + 1; i++)
     {
-        printf("%d\n",arr[i]);
+        printf("%d\n", arr[i]);
     }
     return 0;
 }
