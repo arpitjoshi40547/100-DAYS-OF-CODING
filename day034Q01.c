@@ -19,8 +19,6 @@ int main()
     scanf("%d",&pos);
     for(int i=0;i<n+1;i++)
     {
-        if(i==n+1)
-        break;
         if(i==pos-1)
         {
             num=arr[i]+num;
