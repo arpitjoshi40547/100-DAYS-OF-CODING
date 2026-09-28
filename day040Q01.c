@@ -29,7 +29,7 @@ int main()
             arr2[j][i]=arr[i][j];     
         }
     }
-    printf("The array after diagonal reversal is:");
+    printf("The array after diagonal reversal is:\n");
     for(int i=0;i<m;i++)
     {
         for(int j=0;j<n;j++)
