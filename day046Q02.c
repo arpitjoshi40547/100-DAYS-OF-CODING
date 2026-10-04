@@ -21,6 +21,7 @@ void repeating(char arr[])
         }
         i++;                                                      
     }
+    printf("No repeating lowercase alphabet found.\n");
 }
 int main()
 {
