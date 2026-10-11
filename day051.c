@@ -1,25 +1,6 @@
 //To input a sorted array and tell the position of a certain number in the array and the time complexity should be O(logn)
 #include <stdio.h>
 #include <stdbool.h>
-//Using a function to sort the array in case the array is not sorted.
-void sorting(int arr[],int len)
-{
-    //using inserstion sort
-    //O(N) at best and at worst O(n^2)
-    int i,j;
-    int key;
-    for(i=0;i<len-1;i++)
-    {
-        int key=arr[i];
-        j=i-1;
-        while(j>=0&&arr[j]>key)
-        {
-            arr[j+1]=arr[j];
-            j=j-1;
-        }
-        arr[j+1]=key;
-    }
-}
 //WE ARE GOING TO SEARCH THE FIRST OCCURANCE AND LAST AND THEN PRINT THE LOCATION OF ALL THE OCCRANCE IF THERE ARE  MORE THAN ONE
 //Using binary search as it takes O(logn) time complexity
 int lower_bound(int arr[],int len,int target)
@@ -94,21 +75,6 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    //Part of the program where i check the given array is sorted or not if not then sort the array
-    int i=0;
-    bool issorted=true;
-    while(i<n-1)
-    {
-        if(arr[i]>arr[i+1])
-        {
-        issorted=false;
-        break;
-        }
-        i++;
-    }
-    if(!issorted)
-    sorting(arr,n);
-
     int target;
     printf("Enter the number u need to search in the array:");
     scanf("%d",&target);
