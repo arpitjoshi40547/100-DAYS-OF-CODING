@@ -3,52 +3,40 @@
 #include <stdio.h>
 int check(int arr[],int len)
 {
-    int freq=0;
-    int i=0;
-    int maj=len/2;
-    while(i<len)
+    int count=0;
+    int mark=arr[0];
+    for(int i=1;i<len-1;i++)
     {
-        if(arr[i]==arr[len-i])
-        freq+=2;
-        i++;
+        if(arr[i]==mark)
+        count++;
+        else if(count==0)
+        {
+        mark=arr[i];
+        count=1;
+        }
+        else
+        count--;
     }
-    if(freq>maj)
-    return 1;
-    else 
-    return 0;
-}
-int check2(int arr[],int len)
-{
-    int freq=0;
-    int i=0;
-    int maj=len/2;
-    while(i<len)
+    count=0;
+    for(int i=0;i<len;i++)
     {
-        if(arr[i]+arr[i+1])
-        freq+=2;
-        i++;
+        if(arr[i]==mark)
+        count++;
     }
-        if(freq>len)
-        return 1;
-        else 
-        return 0;
+    return (count > len/ 2) ? mark : -1;
 }
 int main()
 {
     int n;
-    printf("The number of elemnets you want in the array:");
+    printf("Enter the length of the array:");
     scanf("%d",&n);
     int arr[n];
-    printf("Enter the elements of the array");
+    printf("Enter the elements of the array:");
     for(int i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
     }
-    int p=check(arr,n);
-    int p1=check2(arr,n);
-    if(p1||p)
-    printf("The array is a majority array");
-    else
-    printf("No a majority array");
+    int x=check(arr,n);
+    printf("The majority element is the array=%d",x);
     return 0;
 }
