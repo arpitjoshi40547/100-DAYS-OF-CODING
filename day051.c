@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 //WE ARE GOING TO SEARCH THE FIRST OCCURANCE AND LAST AND THEN PRINT THE LOCATION OF ALL THE OCCRANCE IF THERE ARE  MORE THAN ONE
-//Using binary search as it takes O(logn) time complexity
+//Using binary search as it takes O(logn) time complexity.
 int lower_bound(int arr[],int len,int target)
 //checking first occurance
 {
