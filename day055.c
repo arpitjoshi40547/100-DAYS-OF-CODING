@@ -1,3 +1,4 @@
+//Boyer-Moore Majority Vote Algorithm
 //Find the majority element in a array 
 //Majority elemnt is which comes more than n/2 number of times mot necessarly with the higest frequecny
 #include <stdio.h>
