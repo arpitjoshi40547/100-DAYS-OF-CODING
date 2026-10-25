@@ -1,0 +1,3 @@
+I Am Trying To Build Logic.
+The Classes Are Supposed To Start Early.
+We Are Going To Look At 26 Different Test Cases.
