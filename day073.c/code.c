@@ -13,7 +13,7 @@ int main()
     char str[1000];
     int letters=0;
     int lines=0;
-    while(fgets(str,sizeof(str),info)!= NULL)
+    while(fgets(str,sizeof(str),info)!= EOF)
     {
         lines++;
         for (int i = 0; str[i] != '\0'; i++) 
