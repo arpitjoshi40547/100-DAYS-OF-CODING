@@ -11,7 +11,7 @@ int main()
     }
     char str[1000];
     printf("The File contents:\n");
-    while(fgets(str,sizeof(str),info) != EOF)
+    while(fgets(str,sizeof(str),info) != NULL)
     {
         printf("%s",str);
         
