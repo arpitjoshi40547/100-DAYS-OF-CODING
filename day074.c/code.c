@@ -22,7 +22,7 @@ int main()
         return 1;
     }
     char str[1000];
-    while(fgets(str,sizeof(str),in)!=NULL)
+    while(fgets(str,sizeof(str),in)!=EOF)
     {
         fputs(str,out);
     }
