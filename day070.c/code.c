@@ -23,7 +23,7 @@ int main()
     char str[256];
 
     // 3. Read line by line from the input file until EOF
-    while (fgets(str, sizeof(str), infile) != EOF) 
+    while (fgets(str, sizeof(str), infile) != NULL) 
     {
         int capitalize_next = 1;
 
