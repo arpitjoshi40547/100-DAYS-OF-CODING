@@ -1,4 +1,4 @@
-Q144: Write a function that accepts a structure as parameter and prints its members.
+//Q144: Write a function that accepts a structure as parameter and prints its members.
 
 /*
 Sample Test Cases:
@@ -10,48 +10,38 @@ Name: Neha | Roll: 104 | Marks: 92
 */
 
 #include <stdio.h>
+#include <string.h>
 
-// Define an enum for Student Grade/Division
-enum Grade {
-    DISTINCTION,
-    FIRST_CLASS,
-    SECOND_CLASS,
-    PASS,
-    FAIL
-};
-
-// Define the Student structure
+// Define the Student structure (without enum)
 struct Student {
     char name[50];
     int roll;
     int marks;
-    enum Grade grade; // Using enum as a member inside the structure
 };
 
-// Helper function to convert enum grade to a printable string
-const char* getGradeString(enum Grade g) {
-    switch (g) {
-        case DISTINCTION: return "Distinction";
-        case FIRST_CLASS: return "First Class";
-        case SECOND_CLASS: return "Second Class";
-        case PASS: return "Pass";
-        case FAIL: return "Fail";
-        default: return "Unknown";
-    }
-}
-
-// Function that accepts the structure as a parameter and prints its members
+// Function that accepts the structure as a parameter (by value) and prints its members
 void printStudent(struct Student s) {
-    printf("Name: %s | Roll: %d | Marks: %d | Grade: %s\n", 
-           s.name, s.roll, s.marks, getGradeString(s.grade));
+    printf("\nOutput:\n");
+    printf("Name: %s | Roll: %d | Marks: %d\n", s.name, s.roll, s.marks);
 }
 
 int main() {
-    // Test case initialization with an enum value
-    struct Student s1 = {"Neha", 104, 92, DISTINCTION};
-    
-    // Calling the function
+    struct Student s1;
+
+    // Taking user input
+    printf("Enter student name: ");
+    fgets(s1.name, sizeof(s1.name), stdin);
+    // Remove the trailing newline character added by fgets
+    s1.name[strcspn(s1.name, "\n")] = 0;
+
+    printf("Enter roll number: ");
+    scanf("%d", &s1.roll);
+
+    printf("Enter marks: ");
+    scanf("%d", &s1.marks);
+
+    // Calling the function (passing the structure by value)
     printStudent(s1);
-    
+
     return 0;
 }
